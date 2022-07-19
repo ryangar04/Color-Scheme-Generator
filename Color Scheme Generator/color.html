@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/color.css">
+    <title>Color Scheme</title>
+</head>
+<body class="flex">
+    <div id="main" class="main">
+      <div id="selector-div" class="flex">
+        <label for="color-picker" class="wideflex">
+          <div class="flex">
+            <input id="color-input" type="color" tabindex="1">
+            <select id="color-scheme" tabindex="2">
+              <option value="Monochrome">Monochrome</option>
+              <option value="Monochrome-dark">Monochrome-dark</option>
+              <option value="Monochrome-light">Monochrome-light</option>
+              <option value="Analogic">Analogic</option>
+              <option value="Complement">Complement</option>
+              <option value="Analogic-complement">Analogic-complement</option>
+              <option value="Triad">Triad</option>
+              <option value="Quad">Quad</option>
+            </select>
+          </div>
+          <button id="my-btn" class="btn" tabindex="3">Get color scheme</button>
+        </label>
+      </div>
+      <div id="colors" class="wideflex">
+        <div class="color">
+            <div class="display-color rotate-animation-${toggleAnimationVar}" style="background: #000000;">
+              <h2 class="hex wideflex">Black<br>
+                #000000</h2>
+            </div>
+        </div>
+        <div class="color">
+            <div class="display-color rotate-animation-${toggleAnimationVar}" style="background: #1A1919;">
+              <h2 class="hex wideflex">Eerie Black<br>
+                #1A1919</h2>
+            </div>
+        </div>
+        <div class="color">
+            <div class="display-color rotate-animation-${toggleAnimationVar}" style="background: #343232;">
+              <h2 class="hex wideflex">Mine Shaft<br>
+                #343232</h2>
+            </div>
+        </div>
+        <div class="color">
+            <div class="display-color rotate-animation-${toggleAnimationVar}" style="background: #4F4A4A;">
+              <h2 class="hex wideflex">Emperor<br>
+                #4F4A4A</h2>
+            </div>
+        </div>
+        <div class="color">
+            <div class="display-color rotate-animation-${toggleAnimationVar}" style="background: #6A6262;">
+              <h2 class="hex wideflex">Granite Gray<br>
+                #6A6262</h2>
+            </div>
+        </div>
+      
+      </div>
+    </div>
+    <script src="/color.js"></script>
+  </body>
+</html>
